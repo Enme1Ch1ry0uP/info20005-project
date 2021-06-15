@@ -1,0 +1,413 @@
+@font-face {
+    font-family:Futura-Bold;
+    src:url('FuturaStdBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:Futura-book-ob;
+    src:url('FuturaStd-BookOblique.otf') ;
+}
+
+@font-face {
+    font-family: Futura-book;
+    src: url('FuturaStd-Book.otf');
+}
+
+@font-face {
+    font-family: Futura-heavy;
+    src: url('FuturaStd-Heavy.otf');
+}
+
+@font-face {
+    font-family: Futura-heavy-ob;
+    src: url(FuturaStd-HeavyOblique.otf);
+}
+
+@font-face {
+    font-family: Futura-bold-cond;
+    src: url('FuturaStd-CondensedBold.otf');
+}
+
+@font-face {
+    font-family: Futura-light;
+    src: url(FuturaStd-Light.otf);
+}
+
+@font-face {
+    font-family: Futura-medium;
+    src: url(FuturaStd-Medium.otf);
+}
+
+@font-face {
+    font-family: Futura-light-ob;
+    src: url(FuturaStd-LightOblique.otf);
+}
+
+
+body{
+    background-color: #F9F9F9;
+}
+*{
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.container{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+.container nav{
+    display:flex;
+    justify-content: space-between;
+    height:120px;
+    align-items: center;
+    padding-left: 55px;
+    
+}
+
+.container nav .left-nav{
+    display: flex;
+    
+   
+}
+
+.container nav .left-nav .link{
+    display:flex;
+    margin-left: 100px;
+    align-items: center;
+   
+
+}
+
+.container nav .left-nav .link a{
+    color:var(--main-font);
+    font-size: 20px;
+    margin-right: 100px;
+    font-family:Futura-book;
+
+}
+
+.container nav .left-nav .link .vertical-line{
+    border-right:1px solid white;
+    height:50px;
+    position: relative;
+    right:50px;
+}
+
+.container nav .right-nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container nav .right-nav img{
+    margin-left: 50px;
+}
+
+
+.container .social-media-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container  .search-bar2 input{
+    margin-left: 50px;
+    border-radius: 50px;
+    height:30px;   
+}
+
+.container  .search-logo2 a{
+    color:var(--orange-btn);
+    position: relative;
+    right:160px;
+}
+
+
+
+.container nav .right-nav .account-logo img{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container nav .right-nav .vertical-line{
+    border-right:1px solid white;
+    height:50px;
+    position: relative;
+    left:25px;
+
+}
+
+.container1{
+    position: relative;
+    top:160px;
+    margin-left: 60px;
+    font-family: Futura-book-ob;
+    
+}
+
+.container2{
+    margin-top: 200px;display: flex;
+
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+}
+
+.content1 .item{
+    display: flex;
+    width:1200px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 60px;
+    height: 254px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+
+}
+
+.itemname h1{
+    font-family: Futura-book;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.itemname p{
+    color:#9D9D9D;
+    font-size: 18px;
+    font-family: Futura-book;
+}
+
+.title{
+    
+    color: black;
+    
+}
+
+.title2 h1{
+    font-family: Futura-heavy-ob;
+}
+
+.title2 p{
+    font-family: Futura-light;
+    margin-left: 20px;
+}
+
+.title2{
+    display: flex;
+    margin-top: 40px;
+}
+
+.item .price{
+    position: relative;
+    bottom: 45px;
+    right:10px;
+}
+
+.btn-numbox ul,
+            li {
+                list-style: none;
+            }
+ 
+            a {
+                text-decoration: none;
+            }
+ 
+            a:hover {
+                cursor: pointer;
+                text-decoration: none;
+            }
+ 
+            a:link {
+                text-decoration: none;
+            }
+ 
+            img {
+                vertical-align: middle;
+            }
+ 
+            .btn-numbox {
+                overflow: hidden;
+                margin-top: 20px;
+            }
+ 
+            .btn-numbox li {
+                float: left;
+            }
+ 
+            .btn-numbox li .number,
+            
+ 
+            .btn-numbox .count {
+                overflow: hidden;
+                margin: 0 16px 0 16px;
+            }
+ 
+            .btn-numbox .count .num-jian,
+            .input-num,
+            .num-jia {
+                display: inline-block;
+                width: 40px;
+                height: 28px;
+                line-height: 25px;
+                text-align: center;
+                font-size: 18px;
+                color: #999;
+                cursor: pointer;
+                border: 1px solid #e6e6e6;
+            }
+            .btn-numbox .count .input-num {
+                width: 58px;
+                height: 28.5px;
+                color: #333;
+                border-left:black;
+                border-right:black;
+                
+            }
+
+.btn-numbox{
+    position: relative;
+    bottom:20px;
+    left:30px;
+}
+
+.item .remove a{
+    color:var(--main-font);
+    font-size: 20px;
+    font-family: Futura-bold;
+    position: relative;
+    bottom: 14px;
+}
+.cart-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content2{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    max-height: 500px;
+    padding :30px 60px;
+    max-width:500px;
+    margin-left: 30px;
+}
+
+.content2 h2{
+    font-size: 20px;
+    font-family: Futura-bold;
+    margin-bottom: 20px;
+}
+
+.q{
+    font-size: 15px;
+    font-family: Futura-light;
+    margin-top: 30px;
+
+}
+
+.price{
+    font-size: 20px;
+    font-family: Futura-bold;
+    margin-top: 65px;
+}
+
+.coupon input{
+    width:350px;
+    height:50px;
+    background-color: rgba(237,237,237,0.7);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.apply{
+    background-color: #FFFFFF;
+    font-size: 15px;
+    width:34px;
+    height:98px;
+    color:#747474;
+    position: relative;
+    bottom: 33px;
+    left:240px;
+    padding: 7px 31px;
+    border-radius: 20px;
+}
+
+.cart-row{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+
+    
+}
+
+.cart-row li{
+    color:#040404;
+    font-size: 20px;
+    font-family: Futura-light;
+    margin-bottom: 30px;
+    
+}
+
+.hori-line{
+    border-top:0.5px solid #707070;
+    margin-top: 20px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    color:white;
+    font-family: Futura-book;
+    background-color:var(--orange-btn);
+    padding:15px 157px;
+    height:30px;
+    width:100%;
+    text-align: center;
+    
+    border-radius: 100px;
+    font-size:15px;
+    margin-top: 80px;
+    transition: background-color 10s ease-in-out,transform 0m5s ease-in-out;
+    
+}
+ .btn:hover{
+    background-color:var(--orange-btn-hover);
+    transition: all 0.05s ease-in-out 0s;
+}
+
+.btn:active{
+    background-color: var(--orange-btn-active);   
+}
+
+.btn:focus{
+    box-shadow: 0 0 1px 6px rgba(229,132,0,0.1), 
+  inset 0 0 0 1px white,
+  0 0 0 1px var(--orange-btn-active);
+
+}
+
+

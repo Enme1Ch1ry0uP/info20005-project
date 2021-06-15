@@ -1,0 +1,482 @@
+@font-face {
+    font-family:Futura-Bold;
+    src:url('FuturaStdBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family:Futura-book-ob;
+    src:url('FuturaStd-BookOblique.otf') ;
+}
+
+@font-face {
+    font-family: Futura-book;
+    src: url('FuturaStd-Book.otf');
+}
+
+@font-face {
+    font-family: Futura-heavy;
+    src: url('FuturaStd-Heavy.otf');
+}
+
+@font-face {
+    font-family: Futura-heavy-ob;
+    src: url(FuturaStd-HeavyOblique.otf);
+}
+
+@font-face {
+    font-family: Futura-bold-cond;
+    src: url('FuturaStd-CondensedBold.otf');
+}
+
+@font-face {
+    font-family: Futura-light;
+    src: url(FuturaStd-Light.otf);
+}
+
+@font-face {
+    font-family: Futura-medium;
+    src: url(FuturaStd-Medium.otf);
+}
+
+@font-face {
+    font-family: Futura-light-ob;
+    src: url(FuturaStd-LightOblique.otf);
+}
+
+
+
+*{
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.body{
+      background-color: #F9F9F9;
+  }
+
+.container{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+.container nav{
+    display:flex;
+    justify-content: space-between;
+    height:120px;
+    align-items: center;
+    padding-left: 55px;
+    
+}
+
+.container nav .left-nav{
+    display: flex;
+    
+   
+}
+
+.container nav .left-nav .link{
+    display:flex;
+    margin-left: 100px;
+    align-items: center;
+   
+
+}
+
+.container nav .left-nav .link a{
+    color:var(--main-font);
+    font-size: 20px;
+    margin-right: 100px;
+    font-family:Futura-book;
+
+}
+
+.container nav .left-nav .link .vertical-line{
+    border-right:1px solid white;
+    height:50px;
+    position: relative;
+    right:50px;
+}
+
+.container nav .right-nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container nav .right-nav img{
+    margin-left: 50px;
+}
+
+
+.container .social-media-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container  .search-bar2 input{
+    margin-left: 50px;
+    border-radius: 50px;
+    height:30px;   
+}
+
+.container  .search-logo2 a{
+    color:var(--orange-btn);
+    position: relative;
+    right:160px;
+}
+
+
+
+.container nav .right-nav .account-logo img{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container nav .right-nav .vertical-line{
+    border-right:1px solid white;
+    height:50px;
+    position: relative;
+    left:25px;
+
+}
+
+.container2{
+    position:relative;
+    top:120px;
+    padding: 40px 60px;
+}
+
+
+
+
+.checkout-progress h1{
+    font-size: 30px;
+    font-family:Futura-heavy-ob;
+    margin-bottom: 10px;
+    
+}
+.arrow-steps{
+    width: 2120px;
+}
+.arrow-steps .step{
+    float:left;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    width: 15%;
+    position: relative;
+    margin: 0 1px 0 0;
+    background-color: #F0F0F0;
+    
+}
+.arrow-steps .step a {
+    color: #777;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Futura-book-ob;
+  }
+
+  .arrow-steps .step:after,
+  .arrow-steps .step:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -19.5px;
+    width: 0;
+    height: 0;
+    border-top: 19.5px solid transparent;
+    border-bottom: 19.5px solid transparent;
+    border-left: 19.5px solid #F0F0F0;
+    z-index: 1;
+  }
+  .arrow-steps .step:before {
+    
+    left: 0;
+    border-left: 19.5px solid #fff;
+    z-index: 0;
+  }
+
+  .arrow-steps .step:first-child:before {
+    border: none;
+  }
+  .arrow-steps .step.current {
+    color: #fff;
+    background-color: #404040;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+  }
+  .arrow-steps .step.current a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .arrow-steps .step.current:after {
+    border-left: 19.5px solid #404040;
+  }
+
+  .checkout2{
+      margin-top: 120px;
+  }
+
+  .credit{
+      width:1240px;
+      max-height: 500pxpx;
+      background-color: white;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+      padding: 40px 60px;
+  }
+
+  .input-group{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    
+    margin-top: 30px;
+    
+    
+
+}
+.input-box{
+   flex: 1;
+  padding: 0px ;
+  width: 500px;
+
+}
+
+.input-group input{
+    width:100%;
+    height:50px ;
+    
+}
+
+.select label{
+    font-size: 30px;
+    font-family: Futura-bold;
+    padding-left: 20px;
+    
+
+}
+
+radio{
+    position: relative;
+    top:22px;
+    right:550px;
+    height:50px;
+    width:50px
+}
+
+.name{
+  padding: 14px 80px 14px 10px;
+  width: 100%;
+ 
+}
+
+.input-group h4{
+    padding:5px 0;
+    font-size: 20px;
+    font-family: Futura-book-ob;
+    
+    letter-spacing: 2px;
+}
+
+ .left{
+    margin-right: 10px;
+}
+
+.right{
+    margin-left: 10px;
+}
+
+
+.paypal{
+    width:1240px;
+      max-height: 597px;
+      background-color: white;
+      
+      box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.3);
+      padding: 40px 60px;
+      position: relative;
+      
+      margin-bottom: 60px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+}
+
+.input-box i{
+    color: gray;
+    position: relative;
+    top:32px;
+    left:1080px;
+}
+
+.cart-item{
+    background-color: white;
+    width: 466px;
+    margin-left:40px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 20px;
+    margin-top: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    height:786px;
+    margin-left: 30px;
+}
+
+.cart-item h2{
+    font-size: 20px;
+    font-family: Futura-bold;
+}
+
+.cart-item .item{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cart-item .item-name{
+    font-size: 20px;
+    font-family: Futura-light;
+
+}
+
+.cart-item img{
+    position:relative;
+    right:5px;
+}
+
+.q{
+    font-size: 15px;
+    font-family: Futura-light;
+    margin-top: 30px;
+
+}
+
+.price{
+    font-size: 20px;
+    font-family: Futura-bold;
+    margin-top: 65px;
+}
+
+.coupon input{
+    width:336px;
+    height:50px;
+    background-color: rgba(237,237,237,0.7);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.apply{
+    background-color: #FFFFFF;
+    font-size: 15px;
+    width:34px;
+    height:98px;
+    color:#747474;
+    position: relative;
+    bottom: 33px;
+    left:220px;
+    padding: 7px 31px;
+    border-radius: 20px;
+}
+
+.cart-row{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+
+    
+}
+
+.cart-row li{
+    color:#040404;
+    font-size: 20px;
+    font-family: Futura-light;
+    margin-bottom: 30px;
+    
+}
+
+.hori-line{
+    border-top:0.5px solid #707070;
+    margin-top: 30px;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.check-p1 .ok{
+    display: flex;
+}
+
+.checkout2{
+    display: flex;
+}
+
+.payment{
+    margin-right: 30px;
+}
+
+.btn{
+    color:white;
+    font-family: Futura-book;
+    background-color:var(--orange-btn);
+    padding:15px 148px;
+    height:30px;
+    width:336px;
+    text-align: center;
+    margin-right: 30px;
+    border-radius: 100px;
+    font-size:15px;
+    margin-top: 80px;
+    transition: background-color 10s ease-in-out,transform 0m5s ease-in-out;
+    position: relative;
+    left: 980px;
+    top:60px;
+}
+ .btn:hover{
+    background-color:var(--orange-btn-hover);
+    transition: all 0.05s ease-in-out 0s;
+}
+
+.btn:active{
+    background-color: var(--orange-btn-active);   
+}
+
+.btn:focus{
+    box-shadow: 0 0 1px 6px rgba(229,132,0,0.1), 
+  inset 0 0 0 1px white,
+  0 0 0 1px var(--orange-btn-active);
+
+}
+
+
+  
+  
+  
+  .container2 input[type=radio]:checked ~ .check {
+    border: 5px solid var(--main-font);
+  }
+  
+  .container2 input[type=radio]:checked ~ .check::before{
+    background: var(--main-font);
+  }
+  
+.container2 input[type=radio]:checked ~ label{
+    color: var(--main-font);
+  }
